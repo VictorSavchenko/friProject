@@ -1,0 +1,43 @@
+Для создания полноценного TODO приложения на React, используя стек PERN (PostgreSQL, Express, React, Node.js) и fetch-запросы, вам потребуется следующий список файлов и их описание:
+
+### Серверная часть (Express и Node.js)
+
+1. **`package.json`**: Файл конфигурации проекта, содержащий информацию о зависимостях и скриптах.
+2. **`server.js`**: Главный файл сервера, который инициализирует Express приложение и настраивает маршруты.
+3. **`db.js`**: Файл для настройки подключения к базе данных PostgreSQL с использованием Sequelize.
+4. **`models/Task.js`**: Модель Sequelize для таблицы задач, определяющая структуру данных задачи.
+5. **`routes/tasks.js`**: Файл с маршрутами для работы с задачами (CRUD операции).
+
+### Клиентская часть (React)
+
+1. **`package.json`**: Файл конфигурации проекта React, содержащий информацию о зависимостях и скриптах.
+2. **`src/index.js`**: Точка входа в приложение React, где рендерится корневой компонент.
+3. **`src/App.js`**: Корневой компонент приложения, который может содержать навигацию и маршрутизацию.
+4. **`src/components/TodoList.js`**: Компонент для отображения списка задач, включая форму для добавления новых задач.
+5. **`src/components/TodoItem.js`**: Компонент для отображения отдельной задачи в списке.
+6. **`src/services/api.js`**: Модуль для выполнения fetch-запросов к серверу для получения, добавления, обновления и удаления задач.
+
+### Описание файлов:
+
+- **`server.js`**: Инициализирует Express приложение, настраивает маршруты и подключается к базе данных.
+- **`db.js`**: Настраивает подключение к базе данных PostgreSQL с использованием Sequelize.
+- **`models/Task.js`**: Определяет модель Sequelize для таблицы задач, включая поля `title`, `description`, и `completed`.
+- **`routes/tasks.js`**: Содержит маршруты Express для обработки запросов к задачам, включая получение списка задач, создание новой задачи, обновление и удаление задачи.
+- **`src/App.js`**: Корневой компонент React, который может содержать навигацию и маршрутизацию.
+- **`src/components/TodoList.js`**: Компонент для отображения списка задач и формы для добавления новых задач.
+- **`src/components/TodoItem.js`**: Компонент для отображения отдельной задачи в списке.
+- **`src/services/api.js`**: Модуль для выполнения fetch-запросов к серверу для взаимодействия с задачами.
+
+Этот список файлов и их описание представляют базовую структуру для TODO приложения на React, использующего стек PERN и fetch-запросы для взаимодействия с сервером.
+
+Citations:
+[1] https://medium.com/@ritapalves/get-started-with-the-pern-stack-an-introduction-and-implementation-guide-e33c55d09994
+[2] https://www.youtube.com/watch?v=5vF0FGfa0RQ
+[3] https://medium.com/bb-tutorials-and-thoughts/how-to-develop-and-build-pern-stack-4fc18a1e5937
+[4] https://www.youtube.com/watch?v=ldYcgPKEZC8
+[5] https://www.youtube.com/watch?v=v_XCqXLfHac
+[6] https://www.youtube.com/watch?v=sQBA0sq9G0A
+[7] https://github.com/jlr7245/PERN-stack-auth-base
+[8] https://github.com/bilalmohib/BackEndPernBookInfo
+[9] https://dev.to/larswaechter/how-i-structure-my-react-projects-jii
+[10] https://www.youtube.com/watch?v=N7zlfRyXQes
